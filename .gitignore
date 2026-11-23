@@ -1,0 +1,20 @@
+# Afhængigheder – installeres med "npm install" på hver pc
+node_modules/
+
+# Next.js build-filer
+.next/
+out/
+
+# Hemmeligheder (fx RESEND_API_KEY) – må aldrig i git
+.env
+.env*.local
+
+# Vercel-kobling (lokal pr. pc)
+.vercel
+
+# TypeScript-cache
+*.tsbuildinfo
+
+# Systemfiler
+.DS_Store
+Thumbs.db

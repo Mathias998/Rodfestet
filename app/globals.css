@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-forest: #233d00;
+  --color-rust:   #cf4f00;
+  --color-cream:  #D9CCB3;
+  --color-bark:   #2C2924;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: #1a2e00;
+    color: #D9CCB3;
+    @apply font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+    color: #D9CCB3;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-rust;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-site px-5 sm:px-8 lg:px-12;
+  }
+
+  .section {
+    @apply py-section;
+  }
+
+  .section-sm {
+    @apply py-section-sm;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2
+           font-sans font-medium tracking-wide
+           transition-all duration-200 cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply btn px-7 py-3.5 text-sm bg-forest text-cream-50
+           hover:bg-forest-700;
+  }
+
+  .btn-secondary {
+    @apply btn px-7 py-3.5 text-sm border border-forest text-forest
+           hover:bg-forest hover:text-cream-50;
+  }
+
+  .btn-rust {
+    @apply btn px-7 py-3.5 text-sm bg-rust text-white
+           hover:bg-rust-700;
+  }
+}

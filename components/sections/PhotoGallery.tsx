@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
 const photos = [
-  { src: '/images/anretning-koekken.webp',      alt: 'Lasse anretter tallerkener i køkkenet' },
-  { src: '/images/gaester-ved-bordet.webp',     alt: 'Gæster ved et dækket bord med vin og mad' },
-  { src: '/images/anretning-dessert.webp',      alt: 'Dessert anrettes med is i skåle' },
-  { src: '/images/anretning-sauce.webp',        alt: 'Sauce lægges på tallerkener klar til servering' },
-  { src: '/images/anretning-sproejtepose.webp', alt: 'Forret anrettes i ring med sprøjtepose' },
-  { src: '/images/anretning-haender.webp',      alt: 'Hænder anretter kylling på en række tallerkener' },
+  { src: '/images/2059.jpg', alt: 'Mad fra Rodfestet' },
+  { src: '/images/1932.jpg', alt: 'Mad fra Rodfestet' },
+  { src: '/images/1369.jpg', alt: 'Mad fra Rodfestet' },
+  { src: '/images/1726.jpg', alt: 'Mad fra Rodfestet' },
+  { src: '/images/1620.jpg', alt: 'Mad fra Rodfestet' },
+  { src: '/images/1338.jpg', alt: 'Mad fra Rodfestet' },
 ]
 
 export function PhotoGallery() {

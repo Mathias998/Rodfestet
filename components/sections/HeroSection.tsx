@@ -26,7 +26,7 @@ export function HeroSection() {
 
         {/* Overskrift */}
         <h1 className="font-serif text-[#D9CCB3] leading-tight max-w-4xl mb-7" style={{ fontSize: 'clamp(1.75rem, 3.5vw, 3rem)' }}>
-          Mad til dit selskab –<br className="hidden sm:block" /><span className="whitespace-nowrap">med kvalitet i hver detalje</span>
+          Mad til dit selskab<br className="hidden sm:block" /><span className="whitespace-nowrap">med rødder i håndværk &amp; gode råvarer</span>
         </h1>
 
         {/* Manchet */}

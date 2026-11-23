@@ -12,17 +12,6 @@ export const metadata: Metadata = {
   },
 }
 
-// Blød overgang i alle kanter, så portrættet glider ind i baggrunden
-const fadeMask =
-  'linear-gradient(to right, transparent, #000 8%, #000 92%, transparent), ' +
-  'linear-gradient(to bottom, transparent, #000 6%, #000 88%, transparent)'
-const fadeEdges: React.CSSProperties = {
-  WebkitMaskImage: fadeMask,
-  maskImage: fadeMask,
-  WebkitMaskComposite: 'source-in',
-  maskComposite: 'intersect',
-}
-
 export default function OmOsPage() {
   return (
     <main className="bg-[#1a2e00] min-h-screen">
@@ -65,10 +54,7 @@ export default function OmOsPage() {
           </div>
 
           <figure className="order-1 lg:order-2 lg:sticky lg:top-28">
-            <div
-              className="relative aspect-[2/3] w-full max-w-xs lg:max-w-none mx-auto overflow-hidden"
-              style={fadeEdges}
-            >
+            <div className="relative aspect-[2/3] w-full max-w-xs lg:max-w-none mx-auto overflow-hidden">
               <Image
                 src="/images/lasse-portraet.webp"
                 alt="Lasse Friis Hilstrøm, kok og indehaver af Rodfestet"
@@ -91,7 +77,7 @@ export default function OmOsPage() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 lg:gap-4 max-w-5xl mx-auto">
           {[
             { src: '/images/lasse-tilberedning.webp', alt: 'Lasse tilbereder pærer i Rodfestet-forklæde' },
-            { src: '/images/fisk-raa.webp',           alt: 'Friske fiskefileter klar til tilberedning' },
+            { src: '/images/1569.jpg',                alt: 'Mad fra Rodfestet' },
             { src: '/images/forklaede-logo.webp',     alt: 'Rodfestet-forklæde med logo' },
           ].map((img) => (
             <div key={img.src} className="relative aspect-[3/4] overflow-hidden">

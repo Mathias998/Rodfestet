@@ -1,0 +1,28 @@
+# Normalisér alle tekstfiler til LF i repoet
+* text=auto eol=lf
+
+# Eksplicitte teksttyper
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.js   text eol=lf
+*.jsx  text eol=lf
+*.json text eol=lf
+*.css  text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.env* text eol=lf
+
+# Binære filer (må aldrig diff'es som tekst)
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.webp binary
+*.gif  binary
+*.ico  binary
+*.svg  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.otf  binary
+*.pdf  binary

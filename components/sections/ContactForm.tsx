@@ -20,6 +20,8 @@ export function ContactForm() {
       gaester:  (form.elements.namedItem('gaester')  as HTMLInputElement).value,
       dato:     (form.elements.namedItem('dato')     as HTMLInputElement).value,
       besked:   (form.elements.namedItem('besked')   as HTMLTextAreaElement).value,
+      // Honeypot – robotter udfylder dette felt; ægte brugere ser det ikke
+      website:  (form.elements.namedItem('website')  as HTMLInputElement).value,
     }
 
     try {
@@ -63,6 +65,15 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      {/* Honeypot-felt: skjult for ægte brugere, men robotter udfylder det */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }}
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Field id="navn"  label="Navn"   type="text"  placeholder="Dit navn"     required />

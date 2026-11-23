@@ -22,6 +22,8 @@ const jsonLd = {
   url: 'https://rodfestet.dk',
   telephone: '+4547474720',
   email: 'kontakt@rodfestet.dk',
+  image: 'https://rodfestet.dk/og-image.jpg',
+  // sameAs: ['https://www.facebook.com/rodfestet', 'https://www.instagram.com/rodfestet'],
   address: {
     '@type': 'PostalAddress',
     addressRegion: 'Sjælland',
